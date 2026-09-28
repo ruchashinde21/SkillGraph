@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SkillGraph | Roadmap</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Graph</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="roadmap.html">
+                    Roadmap
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <button
+                    class="logout-btn"
+                    onclick="logoutUser()">
+                    Logout
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ROADMAP HEADER -->
+
+    <section class="roadmap-header">
+
+        <p class="roadmap-label">
+            PERSONALIZED LEARNING PATH
+        </p>
+
+        <h1 id="roadmapTitle">
+            Your Career Roadmap
+        </h1>
+
+        <p id="roadmapSubtitle">
+            Your personalized roadmap is being prepared.
+        </p>
+
+    </section>
+
+
+    <!-- ROADMAP -->
+
+    <main class="roadmap-container">
+
+        <!-- PROGRESS -->
+
+        <section class="roadmap-progress-card">
+
+            <div class="roadmap-progress-header">
+
+                <div>
+
+                    <span>
+                        ROADMAP PROGRESS
+                    </span>
+
+                    <h2>
+                        <span id="roadmapCompleted">
+                            0
+                        </span>
+                        /
+                        <span id="roadmapTotal">
+                            0
+                        </span>
+                        Skills Completed
+                    </h2>
+
+                </div>
+
+                <strong id="roadmapPercentage">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="roadmap-progress-bar">
+
+                <div id="roadmapProgressFill"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ROADMAP LIST -->
+
+        <section class="roadmap-section">
+
+            <div class="roadmap-section-heading">
+
+                <div>
+
+                    <p>
+                        YOUR LEARNING JOURNEY
+                    </p>
+
+                    <h2>
+                        Skills to Build
+                    </h2>
+
+                    <span>
+                        Follow these steps to strengthen the skills required for your career goal.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div id="roadmapList"
+                class="roadmap-list">
+
+                <!-- JavaScript will generate roadmap -->
+
+            </div>
+
+        </section>
+
+
+        <!-- NEXT SKILL -->
+
+        <section class="roadmap-next-card">
+
+            <div>
+
+                <span>
+                    NEXT RECOMMENDED SKILL
+                </span>
+
+                <h2 id="nextRoadmapSkill">
+                    —
+                </h2>
+
+                <p id="nextRoadmapDescription">
+                    Continue your roadmap to build the skills needed for your career.
+                </p>
+
+            </div>
+
+
+            <button
+                id="nextSkillBtn"
+                class="primary-btn">
+
+                Start Learning →
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            SkillGraph • Personalized Tech Career Intelligence
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

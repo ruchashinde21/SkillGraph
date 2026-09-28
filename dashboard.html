@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | SkillGraph</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Graph</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="roadmap.html">
+                    Roadmap
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <button
+                    class="logout-btn"
+                    onclick="logoutUser()">
+                    Logout
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="dashboard">
+
+
+        <!-- WELCOME -->
+
+        <section class="dashboard-header">
+
+            <div>
+
+                <p class="tagline">
+                    YOUR SKILL INTELLIGENCE
+                </p>
+
+                <h1>
+                    Your Career Dashboard
+                </h1>
+
+                <p id="careerDescription">
+                    Here's where you stand on your journey.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUMMARY CARDS -->
+
+        <section class="summary-grid">
+
+
+            <div class="summary-card">
+
+                <span class="summary-label">
+                    Career Goal
+                </span>
+
+                <h2 id="careerGoal">
+                    —
+                </h2>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span class="summary-label">
+                    Readiness
+                </span>
+
+                <h2 id="readinessScore">
+                    0%
+                </h2>
+
+                <div class="mini-progress">
+
+                    <div id="readinessBar"></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span class="summary-label">
+                    Skills
+                </span>
+
+                <h2 id="skillCount">
+                    0
+                </h2>
+
+                <span class="summary-small">
+                    skills assessed
+                </span>
+
+            </div>
+
+
+            <div class="summary-card">
+
+                <span class="summary-label">
+                    Skill Gaps
+                </span>
+
+                <h2 id="gapCount">
+                    0
+                </h2>
+
+                <span class="summary-small">
+                    skills to improve
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAIN GRID -->
+
+        <section class="dashboard-grid">
+
+
+            <!-- SKILLS -->
+
+            <div class="dashboard-card skills-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>Your Skills</h2>
+
+                        <p>
+                            Your current technical abilities
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div id="skillList"
+                    class="skill-list">
+
+                    <!-- JavaScript will generate -->
+
+                </div>
+
+            </div>
+
+
+            <!-- SKILL GAP -->
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>Skill Gaps</h2>
+
+                        <p>
+                            Skills you should focus on next
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div id="gapList"
+                    class="gap-list">
+
+                    <!-- JavaScript -->
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- SKILL GRAPH -->
+
+        <section class="dashboard-card graph-section">
+
+            <div class="card-header">
+
+                <div>
+
+                    <h2>Your Skill Graph</h2>
+
+                    <p>
+                        See how your skills connect to your career goal.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="skillGraph"
+                class="skill-graph">
+
+                <!-- JavaScript will create graph -->
+
+            </div>
+
+        </section>
+
+
+        <!-- NEXT STEP -->
+
+        <section class="next-step">
+
+            <div>
+
+                <span class="next-label">
+                    RECOMMENDED NEXT STEP
+                </span>
+
+                <h2 id="nextSkill">
+                    —
+                </h2>
+
+                <p id="nextSkillDescription">
+                    —
+                </p>
+
+            </div>
+
+
+            <button id="roadmapBtn"
+                class="primary-btn">
+
+                View My Roadmap →
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SkillGraph | Learn Skill</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Graph</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="roadmap.html">
+                    Roadmap
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <button
+                    class="logout-btn"
+                    onclick="logoutUser()">
+                    Logout
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- SKILL HEADER -->
+
+    <section class="skill-learning-header">
+
+        <p class="roadmap-label">
+            PERSONALIZED LEARNING
+        </p>
+
+        <h1 id="skillTitle">
+            Loading Skill...
+        </h1>
+
+        <p id="skillDescription">
+            Your personalized learning path is being prepared.
+        </p>
+
+    </section>
+
+
+    <!-- SKILL LEARNING CONTENT -->
+
+    <main class="skill-learning-container">
+
+
+        <!-- CONCEPTS -->
+
+        <section class="learning-section">
+
+            <div class="section-heading">
+
+                <span>
+                    01
+                </span>
+
+                <div>
+
+                    <h2>
+                        What You Need to Learn
+                    </h2>
+
+                    <p>
+                        Important concepts to build your foundation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="conceptList"
+                class="learning-grid">
+
+                <!-- JavaScript will generate -->
+
+            </div>
+
+        </section>
+
+
+        <!-- RESOURCES -->
+
+        <section class="learning-section">
+
+            <div class="section-heading">
+
+                <span>
+                    02
+                </span>
+
+                <div>
+
+                    <h2>
+                        Learning Resources
+                    </h2>
+
+                    <p>
+                        Recommended resources to start learning.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="resourceList"
+                class="resource-grid">
+
+                <!-- JavaScript will generate -->
+
+            </div>
+
+        </section>
+
+
+        <!-- PRACTICE -->
+
+        <section class="learning-section">
+
+            <div class="section-heading">
+
+                <span>
+                    03
+                </span>
+
+                <div>
+
+                    <h2>
+                        Practice
+                    </h2>
+
+                    <p>
+                        Test your knowledge with practical tasks.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="practiceList"
+                class="practice-list">
+
+                <!-- JavaScript will generate -->
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT -->
+
+        <section class="learning-section">
+
+            <div class="section-heading">
+
+                <span>
+                    04
+                </span>
+
+                <div>
+
+                    <h2>
+                        Build a Project
+                    </h2>
+
+                    <p>
+                        Apply what you learned in a real project.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div id="projectCard"
+                class="project-learning-card">
+
+                <!-- JavaScript will generate -->
+
+            </div>
+
+        </section>
+
+
+        <!-- COMPLETE SKILL -->
+
+        <section class="skill-complete-card">
+
+            <div>
+
+                <span>
+                    NEXT MILESTONE
+                </span>
+
+                <h2 id="completeTitle">
+                    Complete this skill
+                </h2>
+
+                <p>
+                    Once you finish learning and practicing this skill,
+                    mark it as completed in your roadmap.
+                </p>
+
+            </div>
+
+
+            <button
+                id="completeSkillBtn"
+                class="primary-btn">
+
+                ✓ Mark Skill Complete
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            SkillGraph • Personalized Tech Career Intelligence
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

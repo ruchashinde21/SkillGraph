@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>SkillGraph | Project Workspace</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Skill<span>Graph</span>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="roadmap.html">
+                    Roadmap
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+                <button
+                    class="logout-btn"
+                    onclick="logoutUser()">
+                    Logout
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PROJECT HEADER -->
+
+    <section class="project-workspace-header">
+
+        <p class="roadmap-label">
+            PROJECT WORKSPACE
+        </p>
+
+        <h1 id="projectTitle">
+            Loading Project...
+        </h1>
+
+        <p id="projectDescription">
+            Your project details are being prepared.
+        </p>
+
+    </section>
+
+
+    <!-- PROJECT WORKSPACE -->
+
+    <main class="project-workspace">
+
+
+        <!-- PROJECT OVERVIEW -->
+
+        <section class="project-overview-card">
+
+            <div class="project-overview-content">
+
+                <span>
+                    YOUR PROJECT
+                </span>
+
+                <h2 id="overviewTitle">
+                    —
+                </h2>
+
+                <p id="overviewDescription">
+                    —
+                </p>
+
+            </div>
+
+
+            <div class="project-tech">
+
+                <p>
+                    TECHNOLOGIES
+                </p>
+
+                <div id="technologyList">
+
+                    <!-- JavaScript will generate -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT PROGRESS -->
+
+        <section class="project-progress-card">
+
+            <div class="project-progress-header">
+
+                <div>
+
+                    <span>
+                        PROJECT PROGRESS
+                    </span>
+
+                    <h2>
+
+                        <span id="completedTasks">
+                            0
+                        </span>
+
+                        /
+
+                        <span id="totalTasks">
+                            0
+                        </span>
+
+                        Tasks Completed
+
+                    </h2>
+
+                </div>
+
+
+                <strong id="projectPercentage">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="project-progress-bar">
+
+                <div id="projectProgressFill"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT TASKS -->
+
+        <section class="project-section">
+
+            <div class="project-section-heading">
+
+                <div>
+
+                    <p>
+                        STEP-BY-STEP
+                    </p>
+
+                    <h2>
+                        Project Tasks
+                    </h2>
+
+                    <span>
+                        Complete each task as you build your project.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div id="projectTaskList"
+                class="project-task-list">
+
+                <!-- JavaScript will generate tasks -->
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECT COMPLETION -->
+
+        <section class="project-complete-card">
+
+            <div>
+
+                <span>
+                    FINAL MILESTONE
+                </span>
+
+                <h2 id="projectCompleteTitle">
+                    Complete Your Project
+                </h2>
+
+                <p id="projectCompleteDescription">
+                    Finish all the tasks and mark your project as completed.
+                </p>
+
+            </div>
+
+
+            <button
+                id="completeProjectBtn"
+                class="primary-btn">
+
+                ✓ Mark Project Complete
+
+            </button>
+
+        </section>
+
+
+        <!-- BACK -->
+
+        <div class="project-back">
+
+            <a href="dashboard.html">
+                ← Back to Dashboard
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            SkillGraph • Personalized Tech Career Intelligence
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
